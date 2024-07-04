@@ -14,3 +14,8 @@
 - Create Redux Store with userSlice
 - Implemented Sign Out
 - Update Profile
+- unsubscribe onAuthStateChanged
+- add constant file
+- Register on TMDB for movies
+- Get movies data from TMDB
+- Store Movies to moviesSlice
