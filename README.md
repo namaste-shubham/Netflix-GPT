@@ -19,3 +19,6 @@
 - Register on TMDB for movies
 - Get movies data from TMDB
 - Store Movies to moviesSlice
+- GPT Search Page
+- GPT Search Bar
+- Multi Language Support
