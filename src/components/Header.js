@@ -9,7 +9,7 @@ import {
   SUPPORTED_LANGUAGE,
   USER_LOGO,
 } from "../utils/constants";
-import { toggleGptSearchView } from "../utils/gptSlice";
+import { clearGptMovies, toggleGptSearchView } from "../utils/gptSlice";
 import { languageChange } from "../utils/languageSlice";
 
 const Header = () => {
@@ -56,6 +56,7 @@ const Header = () => {
 
   const handleGptSearchClick = () => {
     dispatch(toggleGptSearchView());
+    dispatch(clearGptMovies());
   };
 
   const handleLanguageChange = (e) => {
@@ -69,7 +70,7 @@ const Header = () => {
         <div className="flex p-2">
           {showGptSearch && (
             <select
-              className="p-2 m-3 bg-gray-900 text-white font-bold rounded-lg"
+              className="p-2 m-3 bg-gray-900 text-white rounded-lg"
               onChange={handleLanguageChange}
             >
               {SUPPORTED_LANGUAGE.map((lang) => (
@@ -80,10 +81,10 @@ const Header = () => {
             </select>
           )}
           <button
-            className="p-2 m-2 bg-purple-800 text-white rounded-lg font-bold"
+            className="p-2 m-2 bg-purple-800 text-white rounded-lg"
             onClick={handleGptSearchClick}
           >
-            {showGptSearch ? "Back to Netflix" : "GPT Search"}
+            {showGptSearch ? "Back To Home" : "GPT Search"}
           </button>
           <img className="w-12 h-12 m-2" src={USER_LOGO} alt="user_icon" />
           <button onClick={handleSignOut} className="text-white font-bold">
