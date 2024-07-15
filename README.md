@@ -22,3 +22,9 @@
 - GPT Search Page
 - GPT Search Bar
 - Multi Language Support
+- Get Open AI Api Key
+- GPT Search API call
+- fetched GPTMoviesSuggestion from TMDB
+- add .env file
+- Memoization
+- Make app Responsive
