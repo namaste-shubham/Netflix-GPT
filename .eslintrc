@@ -1,5 +1,7 @@
 {
+  "plugins": ["react-hooks"],
   "rules": {
-    "no-unused-vars": "off"
+    "react-hooks/exhaustive-deps": "warn",
+     "no-unused-vars": "off"
   }
 }
